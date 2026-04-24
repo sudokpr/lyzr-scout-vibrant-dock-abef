@@ -1,0 +1,48 @@
+{
+  "app_name": "Lyzr Architect App Analyzer",
+  "pattern": "manager-subagent",
+  "agents": {
+    "tech_stack_analyzer": {
+      "agent_id": "69ea26817adbc735171cbc34",
+      "name": "Tech Stack Analyzer",
+      "type": "sub-agent",
+      "provider": "Perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.2,
+      "top_p": 1
+    },
+    "agent_config_analyzer": {
+      "agent_id": "69ea2681fb2ab1da31607986",
+      "name": "Agent Config Analyzer",
+      "type": "sub-agent",
+      "provider": "Anthropic",
+      "model": "claude-sonnet-4-6",
+      "temperature": 0.2,
+      "top_p": 1
+    },
+    "insights_analyzer": {
+      "agent_id": "69ea268230f8cec0832e0bad",
+      "name": "Insights Analyzer",
+      "type": "sub-agent",
+      "provider": "Anthropic",
+      "model": "claude-sonnet-4-6",
+      "temperature": 0.3,
+      "top_p": 1
+    },
+    "app_analysis_coordinator": {
+      "agent_id": "69ea26a3dcd146a72248ce95",
+      "name": "App Analysis Coordinator",
+      "type": "manager",
+      "provider": "OpenAI",
+      "model": "gpt-5.1",
+      "temperature": 0.3,
+      "top_p": 1,
+      "managed_agents": [
+        "69ea26817adbc735171cbc34",
+        "69ea2681fb2ab1da31607986",
+        "69ea268230f8cec0832e0bad"
+      ]
+    }
+  },
+  "primary_agent_id": "69ea26a3dcd146a72248ce95"
+}

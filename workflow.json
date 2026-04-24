@@ -1,0 +1,23 @@
+{
+  "app_name": "Lyzr Architect App Analyzer",
+  "pattern": "manager-subagent",
+  "workflow": {
+    "nodes": [
+      {"id": "input_node", "type": "Input", "label": "App URL Input", "nodeCategory": "input"},
+      {"id": "manager_agent", "type": "Agent", "label": "App Analysis Coordinator", "nodeCategory": "agent", "agent_id": "69ea26a3dcd146a72248ce95"},
+      {"id": "tech_stack_agent", "type": "Agent", "label": "Tech Stack Analyzer", "nodeCategory": "agent", "agent_id": "69ea26817adbc735171cbc34"},
+      {"id": "agent_config_agent", "type": "Agent", "label": "Agent Config Analyzer", "nodeCategory": "agent", "agent_id": "69ea2681fb2ab1da31607986"},
+      {"id": "insights_agent", "type": "Agent", "label": "Insights Analyzer", "nodeCategory": "agent", "agent_id": "69ea268230f8cec0832e0bad"},
+      {"id": "output_node", "type": "Output", "label": "Analysis Report", "nodeCategory": "end"}
+    ],
+    "edges": [
+      {"source": "input_node", "target": "manager_agent"},
+      {"source": "manager_agent", "target": "tech_stack_agent"},
+      {"source": "manager_agent", "target": "agent_config_agent"},
+      {"source": "manager_agent", "target": "insights_agent"},
+      {"source": "tech_stack_agent", "target": "output_node"},
+      {"source": "agent_config_agent", "target": "output_node"},
+      {"source": "insights_agent", "target": "output_node"}
+    ]
+  }
+}

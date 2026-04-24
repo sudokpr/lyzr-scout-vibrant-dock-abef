@@ -1,0 +1,234 @@
+{
+  "agent_name": "App Analysis Coordinator",
+  "agent_id": "69ea26a3dcd146a72248ce95",
+  "description": "Coordinates all sub-agents, routes the app URL/content to each specialist, aggregates their outputs into a unified technical report",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "executive_summary": {
+      "app_name": "string",
+      "architecture_pattern": "string",
+      "key_findings": [
+        "string"
+      ],
+      "agent_count": "string",
+      "integration_count": "string",
+      "kb_count": "string",
+      "overall_assessment": "string"
+    },
+    "tech_stack": {
+      "frontend": [
+        {
+          "name": "string",
+          "category": "string",
+          "confidence": "string"
+        }
+      ],
+      "backend": [
+        {
+          "name": "string",
+          "category": "string",
+          "confidence": "string"
+        }
+      ],
+      "ai_ml": [
+        {
+          "name": "string",
+          "category": "string",
+          "confidence": "string"
+        }
+      ],
+      "infrastructure": [
+        {
+          "name": "string",
+          "category": "string",
+          "confidence": "string"
+        }
+      ]
+    },
+    "agent_architecture": {
+      "pattern": "string",
+      "pattern_description": "string",
+      "agents": [
+        {
+          "name": "string",
+          "type": "string",
+          "model": "string",
+          "temperature": "string",
+          "tools": [
+            "string"
+          ],
+          "knowledge_bases": [
+            "string"
+          ],
+          "description": "string"
+        }
+      ],
+      "communication_flows": [
+        {
+          "from": "string",
+          "to": "string",
+          "description": "string"
+        }
+      ]
+    },
+    "data_flow_integrations": {
+      "data_flows": [
+        {
+          "name": "string",
+          "path": "string",
+          "description": "string"
+        }
+      ],
+      "integrations": [
+        {
+          "name": "string",
+          "type": "string",
+          "status": "string"
+        }
+      ]
+    },
+    "prompt_analysis": {
+      "overall_quality": "string",
+      "patterns": [
+        {
+          "name": "string",
+          "quality": "string",
+          "suggestion": "string"
+        }
+      ],
+      "strengths": [
+        "string"
+      ],
+      "weaknesses": [
+        "string"
+      ]
+    },
+    "performance_optimization": {
+      "model_assessment": "string",
+      "temperature_assessment": "string",
+      "recommendations": [
+        {
+          "area": "string",
+          "recommendation": "string",
+          "impact": "string",
+          "priority": "string"
+        }
+      ]
+    }
+  },
+  "example_response": {
+    "executive_summary": {
+      "app_name": "sample string",
+      "architecture_pattern": "sample string",
+      "key_findings": [
+        "sample string"
+      ],
+      "agent_count": "sample string",
+      "integration_count": "sample string",
+      "kb_count": "sample string",
+      "overall_assessment": "sample string"
+    },
+    "tech_stack": {
+      "frontend": [
+        {
+          "name": "sample string",
+          "category": "sample string",
+          "confidence": "sample string"
+        }
+      ],
+      "backend": [
+        {
+          "name": "sample string",
+          "category": "sample string",
+          "confidence": "sample string"
+        }
+      ],
+      "ai_ml": [
+        {
+          "name": "sample string",
+          "category": "sample string",
+          "confidence": "sample string"
+        }
+      ],
+      "infrastructure": [
+        {
+          "name": "sample string",
+          "category": "sample string",
+          "confidence": "sample string"
+        }
+      ]
+    },
+    "agent_architecture": {
+      "pattern": "sample string",
+      "pattern_description": "sample string",
+      "agents": [
+        {
+          "name": "sample string",
+          "type": "sample string",
+          "model": "sample string",
+          "temperature": "sample string",
+          "tools": [
+            "sample string"
+          ],
+          "knowledge_bases": [
+            "sample string"
+          ],
+          "description": "sample string"
+        }
+      ],
+      "communication_flows": [
+        {
+          "from": "sample string",
+          "to": "sample string",
+          "description": "sample string"
+        }
+      ]
+    },
+    "data_flow_integrations": {
+      "data_flows": [
+        {
+          "name": "sample string",
+          "path": "sample string",
+          "description": "sample string"
+        }
+      ],
+      "integrations": [
+        {
+          "name": "sample string",
+          "type": "sample string",
+          "status": "sample string"
+        }
+      ]
+    },
+    "prompt_analysis": {
+      "overall_quality": "sample string",
+      "patterns": [
+        {
+          "name": "sample string",
+          "quality": "sample string",
+          "suggestion": "sample string"
+        }
+      ],
+      "strengths": [
+        "sample string"
+      ],
+      "weaknesses": [
+        "sample string"
+      ]
+    },
+    "performance_optimization": {
+      "model_assessment": "sample string",
+      "temperature_assessment": "sample string",
+      "recommendations": [
+        {
+          "area": "sample string",
+          "recommendation": "sample string",
+          "impact": "sample string",
+          "priority": "sample string"
+        }
+      ]
+    }
+  }
+}
